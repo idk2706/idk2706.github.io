@@ -1,0 +1,47 @@
+body {
+   background-image: url("backgroundBlackGlow2.png");
+   background-repeat: no-repeat;
+   background-color: rgb(0, 0, 0);
+   
+  }
+#paragraph{
+  text-align:center;
+  color:rgb(252, 114, 1);
+  font-size:200%;
+  margin-top:100px;
+}
+ .myDiv{
+    margin-top:300px;
+    text-align:center;
+    
+}
+#exampleImage{
+  text-align:center;
+  visibility:hidden;
+}
+#howItWorksButton{
+  margin-left:37%;
+
+}
+#helpButton{
+  margin-left:20px;
+
+}
+#aboutMeButton{
+  margin-left:20px;
+
+}
+.buttn{
+  position:relative;
+  background-color:rgb(255, 163, 78);
+  color:rgb(255,255,255);
+  height: 50px; 
+  width: 200px; 
+  font-size:200%;
+  z-index: 1;
+  margin-top:300px;
+ 
+  
+
+  
+}

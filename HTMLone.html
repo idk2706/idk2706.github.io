@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<link rel="stylesheet" href="cssOne.css">
+<body>
+<h1></h1>
+<a id ="rickRoll" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">My GitHub account</a>
+<button class="buttn" id="howItWorksButton"  onclick="howItWorks(event)">How it works</button>
+<button class="buttn" id="helpButton"  onclick="help(event)">Help</button>
+<button class="buttn" id="aboutMeButton"  onclick="aboutMe(event)">About me</button>
+<p id="paragraph">Welcome!!!</p>
+<div class="myDiv">
+    <img id= "exampleImage" src="example3.png"/>
+</div>
+<script>
+    function help(){
+        
+        document.getElementById("paragraph").innerHTML='I am not gonna help you!!!<br/>Wanna watch hentai???';
+
+        var helpButton1=document.getElementById("helpButton");
+        helpButton1.style.backgroundColor = "#FC7201";
+
+        var aboutMeButton1=document.getElementById("aboutMeButton");
+        aboutMeButton1.style.backgroundColor = "#FFA34E";
+        
+        var howItWorksButton1=document.getElementById("howItWorksButton");
+        howItWorksButton1.style.backgroundColor = "#FFA34E";
+
+        var myImage=document.getElementById("exampleImage");
+        myImage.style.visibility='hidden';
+
+    
+
+    }
+    function aboutMe(){
+
+        document.getElementById("paragraph").innerHTML='My name is Filip...';
+
+        var helpButton1=document.getElementById("helpButton");
+        helpButton1.style.backgroundColor = "#FFA34E";
+
+        var aboutMeButton1=document.getElementById("aboutMeButton");
+        aboutMeButton1.style.backgroundColor = "#FC7201";
+        
+        var howItWorksButton1=document.getElementById("howItWorksButton");
+        howItWorksButton1.style.backgroundColor = "#FFA34E";
+
+        var myImage=document.getElementById("exampleImage");
+        myImage.style.visibility='hidden';
+
+    }
+    function howItWorks(){
+
+        document.getElementById("paragraph").innerHTML='It just does, do not ask me...';
+
+        var helpButton1=document.getElementById("helpButton");
+        helpButton1.style.backgroundColor = "#FFA34E";
+
+        var aboutMeButton1=document.getElementById("aboutMeButton");
+        aboutMeButton1.style.backgroundColor = "#FFA34E";
+        
+        var howItWorksButton1=document.getElementById("howItWorksButton");
+        howItWorksButton1.style.backgroundColor = "#FC7201";
+
+        var myImage=document.getElementById("exampleImage");
+        myImage.style.visibility='visible';
+
+    }
+
+</script>
+</body>
+</html>
