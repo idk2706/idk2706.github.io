@@ -16,6 +16,30 @@
 </div>
 <script>
     function help(){
+        var id=null;
+        var myButton=document.getElementById("helpButton");
+        var position=0;
+        var done=false;
+        var doneEverything=false;
+        clearInterval(id);
+        id=setInterval(frame,10);
+        function frame(){
+            if(done==true){
+                position-=1;
+                myButton.style.top = position + 'px';
+                if(position==0){
+                    done=false;
+                    doneEverything=true;
+                }
+            }
+            else if(doneEverything==false){
+                position+=1;
+                myButton.style.top = position + 'px';
+                if(position==20){
+                    done=true;
+                }
+            }
+        }
         
         document.getElementById("paragraph").innerHTML='I am not gonna help you!!!<br/>Wanna watch hentai???';
 
@@ -35,6 +59,30 @@
 
     }
     function aboutMe(){
+        var id=null;
+        var myButton=document.getElementById("aboutMeButton");
+        var position=0;
+        var done=false;
+        var doneEverything=false;
+        clearInterval(id);
+        id=setInterval(frame,10);
+        function frame(){
+            if(done==true){
+                position-=1;
+                myButton.style.top = position + 'px';
+                if(position==0){
+                    done=false;
+                    doneEverything=true;
+                }
+            }
+            else if(doneEverything==false){
+                position+=1;
+                myButton.style.top = position + 'px';
+                if(position==20){
+                    done=true;
+                }
+            }
+        }
 
         document.getElementById("paragraph").innerHTML='My name is Filip...';
 
@@ -52,6 +100,30 @@
 
     }
     function howItWorks(){
+        var id=null;
+        var myButton=document.getElementById("howItWorksButton");
+        var position=0;
+        var done=false;
+        var doneEverything=false;
+        clearInterval(id);
+        id=setInterval(frame,10);
+        function frame(){
+            if(done==true){
+                position-=1;
+                myButton.style.top = position + 'px';
+                if(position==0){
+                    done=false;
+                    doneEverything=true;
+                }
+            }
+            else if(doneEverything==false){
+                position+=1;
+                myButton.style.top = position + 'px';
+                if(position==20){
+                    done=true;
+                }
+            }
+        }
 
         document.getElementById("paragraph").innerHTML='It just does, do not ask me...';
 
