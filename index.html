@@ -12,6 +12,7 @@
 <button class="buttn" id="helpButton"  onclick="help(event)">Help</button>
 
 <p id="paragraph">Welcome!!!</p>
+
 <div class="myDiv">
     <img id= "exampleImage" src="example3.png"/>
 </div>
@@ -57,6 +58,9 @@
 
         var myImage=document.getElementById("exampleImage");
         myImage.style.visibility='hidden';
+        var myImage=document.getElementById("contactMail");
+        myImage.style.visibility='hidden';
+
 
     
 
@@ -87,7 +91,7 @@
             }
         }
 
-        document.getElementById("paragraph").innerHTML='My name is Filip...';
+        document.getElementById("paragraph").innerHTML='My name is Filip...<br/><a id="contactMail" href="mailto:696969hentaiLover696969@gmail.com">Contact us</a>';
 
         var helpButton1=document.getElementById("helpButton");
         helpButton1.style.backgroundColor = "#FFA34E";
@@ -100,6 +104,8 @@
 
         var myImage=document.getElementById("exampleImage");
         myImage.style.visibility='hidden';
+        var myImage=document.getElementById("contactMail");
+        myImage.style.visibility='visible';
 
     }
     function howItWorks(){
@@ -141,6 +147,9 @@
 
         var myImage=document.getElementById("exampleImage");
         myImage.style.visibility='visible';
+        var myImage=document.getElementById("contactMail");
+        myImage.style.visibility='hidden';
+
 
     }
 
