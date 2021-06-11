@@ -6,15 +6,18 @@
 <link rel="stylesheet" href="cssOne.css">
 <body>
 <h1></h1>
-<a id ="rickRoll" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">My GitHub account</a>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <button class="buttn" id="howItWorksButton"  onclick="howItWorks(event)">How it works</button>
-<button class="buttn" id="helpButton"  onclick="help(event)">Help</button>
 <button class="buttn" id="aboutMeButton"  onclick="aboutMe(event)">About me</button>
+<button class="buttn" id="helpButton"  onclick="help(event)">Help</button>
+
 <p id="paragraph">Welcome!!!</p>
 <div class="myDiv">
     <img id= "exampleImage" src="example3.png"/>
 </div>
+
 <script>
+    
     function help(){
         var id=null;
         var myButton=document.getElementById("helpButton");
@@ -22,7 +25,7 @@
         var done=false;
         var doneEverything=false;
         clearInterval(id);
-        id=setInterval(frame,10);
+        id=setInterval(frame,3);
         function frame(){
             if(done==true){
                 position-=1;
@@ -65,7 +68,7 @@
         var done=false;
         var doneEverything=false;
         clearInterval(id);
-        id=setInterval(frame,10);
+        id=setInterval(frame,3);
         function frame(){
             if(done==true){
                 position-=1;
@@ -106,7 +109,7 @@
         var done=false;
         var doneEverything=false;
         clearInterval(id);
-        id=setInterval(frame,10);
+        id=setInterval(frame,3);
         function frame(){
             if(done==true){
                 position-=1;
