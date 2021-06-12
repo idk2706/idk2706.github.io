@@ -6,154 +6,31 @@
 <link rel="stylesheet" href="cssOne.css">
 <body>
 <h1></h1>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<button class="buttn" id="howItWorksButton"  onclick="howItWorks(event)">How it works</button>
-<button class="buttn" id="aboutMeButton"  onclick="aboutMe(event)">About me</button>
+
+<div class="orangeBox"></div>
+<button class="buttn" id="homePageButton"  style="background-color:#FC7201;" onclick="homePage(event)">Home page</button>
+<button class="buttn" id="aboutMeButton" onclick="aboutMe(event)">About me</button>
+<button class="buttn" id="downloadButton"  onclick="download(event)">Download</button>
 <button class="buttn" id="helpButton"  onclick="help(event)">Help</button>
-
-<p id="paragraph">Welcome!!!</p>
-
-<div class="myDiv">
-    <img id= "exampleImage" src="example3.png"/>
-</div>
-
+<button class="buttn" id="howItWorksButton"  onclick="howItWorks(event)">How it works</button>
 <script>
-    
-    function help(){
-        var id=null;
-        var myButton=document.getElementById("helpButton");
-        var position=0;
-        var done=false;
-        var doneEverything=false;
-        clearInterval(id);
-        id=setInterval(frame,5);
-        function frame(){
-            if(done==true){
-                position-=1;
-                myButton.style.top = position + 'px';
-                if(position==0){
-                    done=false;
-                    doneEverything=true;
-                }
-            }
-            else if(doneEverything==false){
-                position+=1;
-                myButton.style.top = position + 'px';
-                if(position==20){
-                    done=true;
-                }
-            }
-        }
-        
-       document.getElementById("paragraph").innerHTML='Sooo, it is not working, huh???<br/>Either:<br/>A) You are stupid af...<br/>B) You put a picture file that is not .png in it...<br/>C) You moved cascades around...<br/>D) You put a wrong path to the image...<br/> We made a tutorial here, you can check it out: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click here</a><br/> Good luck!!! '+
-        '<br/>You can download the face haar cascade here:<br/><a href="/idk2706.github.io/face_cascade.xml" download="face_cascade"><img src="downloadButton.jpg" </a>';
-
-        var helpButton1=document.getElementById("helpButton");
-        helpButton1.style.backgroundColor = "#FC7201";
-
-        var aboutMeButton1=document.getElementById("aboutMeButton");
-        aboutMeButton1.style.backgroundColor = "#FFA34E";
-        
-        var howItWorksButton1=document.getElementById("howItWorksButton");
-        howItWorksButton1.style.backgroundColor = "#FFA34E";
-
-        var myImage=document.getElementById("exampleImage");
-        myImage.style.visibility='hidden';
-        var myImage=document.getElementById("contactMail");
-        myImage.style.visibility='hidden';
-
-
-    
-
+    function homePage(){
+        window.location.href = "index.html";
     }
     function aboutMe(){
-        var id=null;
-        var myButton=document.getElementById("aboutMeButton");
-        var position=0;
-        var done=false;
-        var doneEverything=false;
-        clearInterval(id);
-        id=setInterval(frame,5);
-        function frame(){
-            if(done==true){
-                position-=1;
-                myButton.style.top = position + 'px';
-                if(position==0){
-                    done=false;
-                    doneEverything=true;
-                }
-            }
-            else if(doneEverything==false){
-                position+=1;
-                myButton.style.top = position + 'px';
-                if(position==20){
-                    done=true;
-                }
-            }
-        }
-
-        document.getElementById("paragraph").innerHTML='My name is Filip...<br/><a id="contactMail" href="mailto:hentailover696969100@gmail.com">Contact us</a>';
-
-        var helpButton1=document.getElementById("helpButton");
-        helpButton1.style.backgroundColor = "#FFA34E";
-
-        var aboutMeButton1=document.getElementById("aboutMeButton");
-        aboutMeButton1.style.backgroundColor = "#FC7201";
-        
-        var howItWorksButton1=document.getElementById("howItWorksButton");
-        howItWorksButton1.style.backgroundColor = "#FFA34E";
-
-        var myImage=document.getElementById("exampleImage");
-        myImage.style.visibility='hidden';
-        var myImage=document.getElementById("contactMail");
-        myImage.style.visibility='visible';
-
+        window.location.href = "aboutMePage.html";
+    }
+    function download(){
+        window.location.href = "downloadPage.html";
+    }
+    function help(){
+        window.location.href = "helpPage.html";
     }
     function howItWorks(){
-        var id=null;
-        var myButton=document.getElementById("howItWorksButton");
-        var position=0;
-        var done=false;
-        var doneEverything=false;
-        clearInterval(id);
-        id=setInterval(frame,5);
-        function frame(){
-            if(done==true){
-                position-=1;
-                myButton.style.top = position + 'px';
-                if(position==0){
-                    done=false;
-                    doneEverything=true;
-                }
-            }
-            else if(doneEverything==false){
-                position+=1;
-                myButton.style.top = position + 'px';
-                if(position==20){
-                    done=true;
-                }
-            }
-        }
-
-        document.getElementById("paragraph").innerHTML='It just does, do not ask me...';
-
-        var helpButton1=document.getElementById("helpButton");
-        helpButton1.style.backgroundColor = "#FFA34E";
-
-        var aboutMeButton1=document.getElementById("aboutMeButton");
-        aboutMeButton1.style.backgroundColor = "#FFA34E";
-        
-        var howItWorksButton1=document.getElementById("howItWorksButton");
-        howItWorksButton1.style.backgroundColor = "#FC7201";
-
-        var myImage=document.getElementById("exampleImage");
-        myImage.style.visibility='visible';
-        var myImage=document.getElementById("contactMail");
-        myImage.style.visibility='hidden';
-
-
+        window.location.href = "howItWorksPage.html";
     }
-
+</script>
+<p id="text">Welcome my fellow human!!!</p>
 </script>
 </body>
 </html>
