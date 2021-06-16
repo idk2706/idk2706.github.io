@@ -7,7 +7,7 @@
 <body>
 <h1></h1>
 
-<div class="orangeBox"></div>
+
 <button class="buttn" id="homePageButton"   onclick="homePage(event)">Home page</button>
 <button class="buttn" id="aboutMeButton" onclick="aboutMe(event)">About me</button>
 <button class="buttn" id="downloadButton" style="background-color:#FC7201;" onclick="download(event)">Download</button>
@@ -15,7 +15,7 @@
 <button class="buttn" id="howItWorksButton"  onclick="howItWorks(event)">How it works</button>
 <script>
     function homePage(){
-        window.location.href = "index.html";
+        window.location.href = "htmlTwo.html";
     }
     function aboutMe(){
         window.location.href = "aboutMePage.html";
@@ -30,7 +30,10 @@
         window.location.href = "howItWorksPage.html";
     }
 </script>
-
+<p id="text">You will soon be able to download the .exe file and the necessary haar cascades...</p>
+<div class="downloadButton1">
+    <a  href="/face_cascade.xml" download="face_cascade.xml"><img src="downloadButton.jpg"></a>
+</div>
 </script>
 </body>
-</html>
+</html>id="downloadButton"
