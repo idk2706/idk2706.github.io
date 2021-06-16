@@ -1,18 +1,22 @@
+html{
+  height:100%;
+}
 body{
   background-image: url("backgroundBlackGlow2.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 30%;
   background-color:rgb(0,0,0);
+  height:100%;
 }
 .buttn{
   position:relative;
   color:rgb(255,255,255);
-  height: 50px; 
+  height: 5%; 
   width: 10%; 
   border-radius:50px;
   font-size:100%;
   z-index: 1;
-  margin-top:11%;
+  margin-top:10%;
   cursor:pointer;
   background-color:#FFA34E;
 }
@@ -40,5 +44,9 @@ body{
   color:#FFA34E;
   text-align:center;
   font-size:150%;
-  margin-top:100px;
+  margin-top:5%;
+
+}
+.downloadButton1{
+  text-align:center;
 }
